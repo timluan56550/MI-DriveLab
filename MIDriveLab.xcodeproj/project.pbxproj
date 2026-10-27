@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+        A00000000000000000000050 /* MentorWorkflow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000045 /* MentorWorkflow.swift */; };
+		A00000000000000000000010 /* MIDriveLab/MIDriveLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000005 /* MIDriveLab/MIDriveLabApp.swift */; };
+		A00000000000000000000020 /* MIDriveLab/DrivingPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000015 /* MIDriveLab/DrivingPlan.swift */; };
+		A00000000000000000000030 /* MIDriveLab/DrivingAIChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000025 /* MIDriveLab/DrivingAIChat.swift */; };
+		A00000000000000000000040 /* MIDriveLab/GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000035 /* MIDriveLab/GoogleService-Info.plist */; };
+		A00000000000000000000060 /* MIDriveLab/RoadQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000055 /* MIDriveLab/RoadQuestion.swift */; };
+		F3804245308E188100E07167 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = F3804242308E188100E07167 /* FirebaseCore */; };
+		F3804246308E188100E07167 /* FirebaseAI in Frameworks */ = {isa = PBXBuildFile; productRef = F3804243308E188100E07167 /* FirebaseAI */; };
+		F3804247308E188100E07167 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = F3804244308E188100E07167 /* FirebaseAppCheck */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+        A00000000000000000000045 /* MentorWorkflow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDriveLab/MentorWorkflow.swift; sourceTree = "<group>"; };
+		A00000000000000000000005 /* MIDriveLab/MIDriveLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDriveLab/MIDriveLabApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000006 /* MIDriveLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MIDriveLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000015 /* MIDriveLab/DrivingPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDriveLab/DrivingPlan.swift; sourceTree = "<group>"; };
+		A00000000000000000000025 /* MIDriveLab/DrivingAIChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDriveLab/DrivingAIChat.swift; sourceTree = "<group>"; };
+		A00000000000000000000035 /* MIDriveLab/GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MIDriveLab/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A00000000000000000000055 /* MIDriveLab/RoadQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDriveLab/RoadQuestion.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+                A00000000000000000000045 /* MentorWorkflow.swift */,
+				A00000000000000000000005 /* MIDriveLab/MIDriveLabApp.swift */,
+				A00000000000000000000015 /* MIDriveLab/DrivingPlan.swift */,
+				A00000000000000000000025 /* MIDriveLab/DrivingAIChat.swift */,
+				A00000000000000000000055 /* MIDriveLab/RoadQuestion.swift */,
+				A00000000000000000000035 /* MIDriveLab/GoogleService-Info.plist */,
+				A00000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000006 /* MIDriveLab.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000004 /* MIDriveLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000009 /* Build configuration list for PBXNativeTarget "MIDriveLab" */;
+			buildPhases = (
+				A00000000000000000000007 /* Sources */,
+				A0000000000000000000000A /* Frameworks */,
+				A0000000000000000000000B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MIDriveLab;
+			packageProductDependencies = (
+				F3804242308E188100E07167 /* FirebaseCore */,
+				F3804243308E188100E07167 /* FirebaseAI */,
+				F3804244308E188100E07167 /* FirebaseAppCheck */,
+			);
+			productName = MIDriveLab;
+			productReference = A00000000000000000000006 /* MIDriveLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 2600;
+			};
+			buildConfigurationList = A00000000000000000000008 /* Build configuration list for PBXProject "MIDriveLab" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000002;
+			packageReferences = (
+				F3804241308E188100E07167 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A00000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000004 /* MIDriveLab */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000010 /* MIDriveLab/MIDriveLabApp.swift in Sources */,
+				A00000000000000000000020 /* MIDriveLab/DrivingPlan.swift in Sources */,
+				A00000000000000000000030 /* MIDriveLab/DrivingAIChat.swift in Sources */,
+				A00000000000000000000060 /* MIDriveLab/RoadQuestion.swift in Sources */,
+                A00000000000000000000050 /* MentorWorkflow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0000000000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3804245308E188100E07167 /* FirebaseCore in Frameworks */,
+				F3804246308E188100E07167 /* FirebaseAI in Frameworks */,
+				F3804247308E188100E07167 /* FirebaseAppCheck in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0000000000000000000000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000040 /* MIDriveLab/GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			};
+			name = Debug;
+		};
+		A00000000000000000000012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			};
+			name = Release;
+		};
+		A00000000000000000000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QK5URTXK5L;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MI DriveLab";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiluan.MIDriveLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A00000000000000000000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QK5URTXK5L;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "x86_64";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MI DriveLab";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = org.tiluan.MIDriveLab;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000008 /* Build configuration list for PBXProject "MIDriveLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000011 /* Debug */,
+				A00000000000000000000012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000009 /* Build configuration list for PBXNativeTarget "MIDriveLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000013 /* Debug */,
+				A00000000000000000000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3804241308E188100E07167 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3804242308E188100E07167 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3804241308E188100E07167 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		F3804243308E188100E07167 /* FirebaseAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3804241308E188100E07167 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAI;
+		};
+		F3804244308E188100E07167 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3804241308E188100E07167 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}
