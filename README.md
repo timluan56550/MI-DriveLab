@@ -1,60 +1,70 @@
-# MI DriveLab — SwiftUI starter
+# MI DriveLab
 
-A native iPhone/iPad prototype for iOS 17 or later. No packages, account, or backend required.
+MI DriveLab is a native iPhone and iPad app for iOS 17 or later that helps people study Michigan driving rules, track supervised practice, and connect with volunteer driving mentors.
 
 ## Run it
 
 1. Open `MIDriveLab.xcodeproj` in Xcode.
-2. Select the **MIDriveLab** scheme and an installed iPhone simulator in the toolbar.
-3. Press **Command-R**.
+2. Select the **MIDriveLab** scheme and an installed iPhone simulator.
+3. Allow Xcode to download the Firebase package dependencies.
+4. Press **Command-R**.
 
-To run on a real iPhone, choose your Apple development team under the target’s **Signing & Capabilities**, change `org.example.MIDriveLab` to your own unique bundle identifier, and select your connected device. Simulator builds do not require a signing team.
+Running on a physical device requires Apple development signing.
+
+Some features require an internet connection and a signed-in account.
 
 ## Included
 
-- **Learn:** RoadReady landing screen, four lessons with three handbook-based questions each, retry feedback, source page references, and saved question/lesson completion.
-- **Practice:** Driving plan with Michigan GDL / Adult progress tracking, visual roadmap header, interactive "GDL explained" guide, next-step recommendations, 30h/50h/permit countdown progress bars, pinned prior hours journal entry, session logging by skill and day/night minutes, and swipe-to-delete.
-- **Connect:** External Michigan resource links and a future mentor-program explanation.
-- **Explore:** A small automotive-section placeholder inside Connect.
-- System dark mode, native navigation, and scalable system text.
+### Learn
 
-Question completion and practice entries use `@AppStorage` (UserDefaults) on the device. They persist across launches, but are not synced or an official licensing log. Deleting the app can remove this data. No location, contact information, or mentor profiles are collected. External links open websites with their own policies.
+- Study Michigan driving rules through lessons and practice questions.
+- Get explanations after answering questions.
+- View handbook references for each question.
+- Track completed questions and lessons.
 
-## Customize
+### Practice
 
-Start in `MIDriveLab/MIDriveLabApp.swift` and `MIDriveLab/DrivingPlan.swift`:
+- Create a personalized driving plan for Michigan teen or adult licensing.
+- Explore the licensing roadmap and requirements.
+- Track daytime and nighttime practice minutes.
+- Record multiple skills practiced during each drive.
+- Include practice hours completed before using the app.
+- View and delete saved practice entries.
 
-- `MichiganRequirements`, `DrivingPlan`, and `RoadmapStep`: Michigan SOS requirement figures, roadmap steps for teens and adults, and questionnaire/settings views.
-- `lessons` and `RoadQuestion`: lesson content, answer choices, explanations, and handbook references.
-- `LearnView` and `LessonView`: lesson cards, question, and feedback.
-- `PracticeView`, `DriveForm`, and `Drive`: journal, requirements progress, and persistence.
-- `ConnectView`: resources and future features.
+### Mentors
 
-For the next version, split these into files, expand the handbook-based question bank and track practice progress by skill. Have educational content reviewed against current Michigan Secretary of State materials. The current lessons are not a complete driver-education course.
+- Browse available driving practice sessions.
+- Volunteer to supervise a practice session.
+- Offer practice in the learner’s car, the volunteer’s car, or either.
+- Request a session as a learner.
+- Accept or decline requests as a volunteer.
+- Check the status of your sessions and requests.
 
-Volunteer matching is intentionally a future feature. Before implementing it, establish program partners, guardian involvement, eligibility and background checks, insurance arrangements, and safeguarding procedures. No real mentors or available programs are represented by the template.
+The mentor feature does not include messaging.
 
-## Demo walkthrough
+### Resources
 
-1. Open Learn → any lesson. Try a wrong answer, then the correct answer. Each lesson has three questions based on the October 2025 handbook.
-2. Answer all three correctly, then return to Learn to see the lesson marked completed. Relaunch to verify progress persists.
-3. Open Practice and log a 30-minute session. Verify the total changes to 0.5 hours.
-4. Relaunch the app to check persistence. Swipe left on the entry to delete it.
-5. Open Connect to show the resource directory and planned community component.
+Explore Michigan driving resources and automotive information through summaries and links to external websites.
 
-Before submission, add an app icon, check the external links, and test on your target iPhone sizes with large text and dark mode.
+### AI tutor
 
+The chatbot is connected through Firebase AI Logic. Its last live test was blocked by depleted Gemini API credits, so responses may remain unavailable until that is resolved.
+
+
+## Suggested walkthrough
+
+1. Open **Learn** and choose a lesson.
+2. Select an incorrect answer to see the feedback, then try again.
+3. Complete the lesson’s questions and return to check your progress.
+4. Sign in and open **Practice**.
+5. Log a drive with 20 daytime minutes and 10 nighttime minutes. Select the skills practiced and verify the entry appears in your journal.
+6. Test **Mentors** with two accounts:
+   - Use the volunteer account to post a session.
+   - Use the learner account to request that session.
+   - Return to the volunteer account to accept or decline the request.
+   - Check the request status from the learner account.
+7. Open **Resources** and explore an external link.
+   
 ## Lesson sources
 
-The 12 practice questions are original paraphrases of *What Every Driver Must Know*, Michigan Department of State, October 2025 edition. Signs and signals reference pp. 30 and 50; Michigan Lefts p. 48; winter driving pp. 62–63; merging and roundabouts pp. 61 and 35. Each question displays its source section and printed page number, and each lesson links to the [official handbook](https://www.michigan.gov/sos/resources/forms/what-every-driver-must-know). The original stop-sign completion is preserved; the additional questions must be completed separately.
-
-
-### AI tutor configuration
-
-The tutor uses Firebase AI Logic through the Gemini Developer API. It does not need a private Gemini API key in the app or in a judge's Xcode settings. Keep the Firebase app configuration (`GoogleService-Info.plist`); the Firebase client API key identifies the project and is different from a private Gemini API key. Restrict that client key to the Firebase APIs it needs, not the Generative Language API.
-
-In the Firebase console, enable the Gemini Developer API under AI Logic and ensure the project has available quota/credits. The last live test for this project reported depleted prepaid credits; migrating to the SDK does not change billing or restore credits.
-
-If App Check is enforced, register the debug token for each judge's simulator during development. Release/device builds require the appropriate production App Check registration. Do not disable enforcement or distribute debug tokens publicly. A tested device build can avoid asking judges to configure their own simulator tokens.
-
-A private Gemini key previously appeared in this repository. Revoke/replace it in Google AI Studio. Removing it from the current source does not remove it from earlier commits; share a clean source archive or remove the secret from history before publishing that history. Do not bypass GitHub's secret-scanning warning.
+The practice questions are original paraphrases of *What Every Driver Must Know*, Michigan Department of State, October 2025 edition. Each question displays its source section and printed page number, and each lesson links to the [official handbook](https://www.michigan.gov/sos/resources/forms/what-every-driver-must-know). 
